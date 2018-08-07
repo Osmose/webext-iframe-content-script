@@ -12,4 +12,4 @@ port.onMessage.addListener((message) => {
 port.onDisconnect.addListener(() => {
   console.log('Content: Background not ready');
 });
-console.log('Content: Initialized');
+console.log(`Content: Initialized on page: ${window.location.href}`);
